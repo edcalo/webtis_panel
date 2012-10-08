@@ -1,0 +1,23 @@
+/* Icons - general
+***************************************************************************************************/
+strong.icon       {overflow:hidden; margin:-2px 0 0 0; padding:0; display:inline-block; vertical-align:middle; background-repeat:no-repeat; z-index:1000; position:relative; width:24px; height:24px; background-image:url('../img/icons.png');}
+strong.icon-small {overflow:hidden; margin:0 0 0 0; padding:0; display:inline-block; vertical-align:middle; background-repeat:no-repeat; z-index:1000; position:relative; width:8px; height:8px; background-image:url('../img/icons-small.png');}
+
+.icon.icon-search   {background-position:-24px  0}
+.icon.icon-lock     {background-position:-48px  0}
+.icon.icon-edit     {background-position:-72px  0}
+.icon.icon-upload   {background-position:-96px  0}
+.icon.icon-photos   {background-position:-120px 0}
+.icon.icon-left     {background-position:-144px 0}
+.icon.icon-right    {background-position:-168px 0}
+.icon.icon-calendar {background-position:-192px 0}
+.icon.icon-cross    {background-position:-216px 0}
+
+.icon-small.icon-left   {background-position:-8px   0}
+.icon-small.icon-up     {background-position:-16px  0}
+.icon-small.icon-right  {background-position:-24px  0}
+.icon-small.icon-down   {background-position:-32px  0}
+.icon-small.icon-left2  {background-position:-40px  0}
+.icon-small.icon-up2    {background-position:-48px  0}
+.icon-small.icon-right2 {background-position:-56px  0}
+.icon-small.icon-down2  {background-position:-64px  0}

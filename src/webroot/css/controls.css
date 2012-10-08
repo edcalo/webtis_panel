@@ -1,0 +1,75 @@
+/* Controls - tabs, buttons etc...
+***************************************************************************************************/
+button.control, div.control, a.control, .control span {margin:0; padding:0; border:0; background-color:transparent; float:left; display:block; text-align:center; text-decoration:none; cursor:pointer; white-space:nowrap;}
+.control span {background:url('../img/controls.png') no-repeat; background-color:transparent; background-position:0 0;}
+
+.control span      {margin:0 12px 0 0; padding:0 0 0 12px;}
+.control span span {margin:0 -12px 0 0; padding:0 10px 0 0px;}
+
+
+/* button fixes */
+button.control {outline: none; vertical-align:middle; display:-moz-inline-box; display:inline-block; overflow:visible /* removes extra side padding in IE */;}
+
+button.control span {position:relative} /* fix for Chrome */
+button.control::-moz-focus-inner {border: none; padding: 0;} /* overrides extra padding in Firefox */
+@media screen and (-webkit-min-device-pixel-ratio:0) {button.control {margin-top: -1px;}} /* Safari and Google Chrome only - fix margins */
+
+button.blank {background:transparent; margin:0; padding:0; border:0}
+.control.blank span  {background:transparent !important; color:#8d8d8d !important; text-shadow:none !important}
+a.control.blank span       {text-decoration:underline}
+a:hover.control.blank span {color:#595959 !important}
+
+/* search */
+.control.search span, .control.search span span {height:27px; line-height:27px; font-weight:normal;}
+.control.search span      {background-position:0    -50px;}
+.control.search span span {background-position:100% -50px;}
+
+.control.search strong.icon {margin-top:0px}
+
+
+/* button1 */
+.control.button1 span, .control.button1 span span {height:35px; line-height:35px; font-weight:normal;}
+.control.button1 span      {background-position:0    -77px;}
+.control.button1 span span {background-position:100% -77px; padding:0 30px 0 20px; color:#fff; font-weight:bold; font-size:110%; text-shadow: 0 1px 1px #678a36;}
+
+.control.button1.blank span {background:transparent; color:#8d8d8d; text-shadow:none;}
+
+
+/* button2 */
+.control.button2 {margin:0 20px 0 0;}
+.control.button2 span, .control.button2 span span {height:52px; line-height:52px;}
+.control.button2 span      {margin:0; padding:0 10px 0 0; background-position:100% -164px;}
+.control.button2 span span {margin:0; padding:0 20px 0 30px; background-position:0 -112px; color:#fff; font-weight:bold; font-size:13.5pt; text-shadow: 0 1px 1px #678a36;}
+
+
+/* button3 */
+.control.button3 {margin:0 20px 0 0;}
+.control.button3 span, .control.button3 span span {height:35px; line-height:35px;}
+.control.button3 span      {margin:0; padding:0 10px 0 0; background-position:100% -330px;}
+.control.button3 span span {margin:0; padding:0 20px 0 30px; background-position:0 -295px; color:#fff; font-weight:bold; font-size:11.5pt; text-shadow: 0 1px 1px #678a36;}
+
+
+/* top menu */
+.topmenu ul {float:right; margin:0; padding:0}
+.topmenu li, .topmenu a {margin:0; padding:0; border:0; background:url('../img/controls.png') no-repeat; background-color:transparent; background-position:0 0; float:left; display:block; text-align:center; text-decoration:none; cursor:pointer; white-space:nowrap; height:32px; line-height:32px; color:#fff; font-weight:bold; }
+.topmenu li {margin:0 8px 0 0; padding:0 0 0 8px;}
+.topmenu a  {margin:0 -8px 0 0; padding:0 8px 0 0px;}
+
+.topmenu p   {margin:-20px 8px 5px 0; padding:0; display:block}
+.topmenu p a {font-size:90%; margin:0; padding:0; font-weight:normal; float:none; text-align:right; height:auto; line-height:normal}
+
+.topmenu li.active    {background-position:0    -263px;}
+.topmenu li.active a  {background-position:100% -263px;}
+
+
+
+/* shadows */
+.shadow1          {margin:0; padding:0 0 24px 0; background:url('../img/shadow1.png') no-repeat center bottom !important;}
+.buttons .shadow1 {overflow:hidden; float:left}
+
+.shadow2          {margin:0; padding:0 0 28px 0; background:url('../img/shadow2.png') no-repeat center bottom !important;}
+
+.shadow1 .button2 span span {min-width:140px;}
+.shadow1 .button3 span span {min-width:140px;}
+
+

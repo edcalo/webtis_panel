@@ -1,0 +1,72 @@
+/* * Additional
+***************************************************************************************************/
+.transparent {filter:alpha(opacity=50); /* for IE */
+-moz-opacity:0.5;                       /* old school versions of the Mozilla browsers like Netscape Navigator */
+-khtml-opacity:0.5;                     /* old versions of Safari (1.x) */
+opacity:0.5;                            /* standard in CSS */
+}
+.alphacolor {
+background:rgb(0, 0, 0); /* Fallback for web browsers that doesn't support RGBa */
+background:rgba(0, 0, 0, 0.6); /* RGBa with 0.6 opacity */
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* For IE 5.5 - 7*/
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* For IE 8*/
+}
+
+
+/* Fixing the background "bleed" in rounded blocks - http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed ----------------------------------------------------------------------------------------------------*/
+.rc2  {-webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc4  {-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc6  {-webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc8  {-webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc10 {-webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc12 {-webkit-border-radius:12px; -moz-border-radius:12px; border-radius:12px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc14 {-webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.rc16 {-webkit-border-radius:16px; -moz-border-radius:16px; border-radius:16px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+
+
+/* Misc elements
+***************************************************************************************************/
+.box_round {
+   -moz-border-radius: 12px; /* FF1-3.6 */
+-webkit-border-radius: 12px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+        border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+ -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; /* useful if you don't want a bg color from leaking outside the border: */  
+}
+
+.box-shadow {
+   -moz-box-shadow: 0px 0px 4px #ffffff;    /* FF3.5+ */
+-webkit-box-shadow: 0px 0px 4px #ffffff; /* Saf3.0+, Chrome */
+        box-shadow: 0px 0px 4px #ffffff;        /* Opera 10.5, IE9, Chrome 10+ */
+}
+
+.text-shadow {
+   -moz-text-shadow: 1px 1px 1px #000;  /* FF3.5+ */
+-webkit-text-shadow: 1px 1px 1px #000;  /* Saf3.0+, Chrome */
+        text-shadow: 1px 1px 1px #000;  /* Opera 10.5, IE9, Chrome 10+ */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#000000')"; /* For IE 8 */
+     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#000000');  /* For IE 5.5 - 7 */
+}
+
+
+/* CSS Hacks
+***************************************************************************************************/
+@media all and (resolution = 0dpi) {.myClass {color:red}}                /* Opera < 10.50 Only */
+@media all and (min-width: 0px) {html:first-child .myClass {color:red}}  /* Opera < 9.5 Only */
+html:first-child .myClass {color:red}                                    /* Opera 9 and below */
+
+body:empty .myClass {color:red}                    /* Firefox 1-2 Only */
+@-moz-document url-prefix() {.myClass {color:red}} /* Firefox Only */
+
+.myClass:not([attr*=""]) {color:red}  /* Gecko Only */
+.myClass:not(:root:root) {color:red} /* Safari Only */
+@media screen and (-webkit-min-device-pixel-ratio:0) {.myClass {color:red}} /* Safari 3.0 and Chrome only */
+
+* html .myClass             {color:red}    /* IE6 and below */
+body .myClass               {_color:red}   /* IE6 Only */
+*:first-child+html .myClass {color:red}    /* IE7 Only */
+*+html .myClass             {color:red}    /* IE7 Only */
+.myClass                    {color:red\0/} /* IE8 Only */
+
+html>body .myClass     {color:red}      /* IE 7 and modern browsers only */
+html>/**/body .myClass {color:red}      /* Modern browsers only (not IE 7) */
+

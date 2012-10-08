@@ -1,0 +1,52 @@
+/* jQuery - UI - general
+***************************************************************************************************/
+.ui-widget-header {background:transparent; border:0; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+
+.ui-dialog         {font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, FreeSans, sans-serif; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; border:0; -moz-box-shadow: 0 0 18px #404040; -webkit-box-shadow: 0 0 18px #404040; box-shadow: 0 0 18px #404040;}
+.ui-widget         {font-size:10pt}
+.ui-widget-content {-webkit-border-radius:0; -moz-border-radius:0; border-radius:0; border:0;}
+
+.ui-dialog-title  {color:#5c5c5c; font-size:140%}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl     {-webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr    {-webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl  {-webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {-webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+
+.ui-widget-overlay {background-image:none; background-color:#000; opacity:0.5}
+
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {float: left;}
+
+.ui-dialog .ui-dialog-titlebar   {margin:0; padding:5px 10px 10px 10px}
+.ui-dialog .ui-dialog-content    {margin:0; padding:10px}
+.ui-dialog .ui-dialog-buttonpane {margin:0; padding:10px}
+
+.ui-dialog .ui-dialog-titlebar-close {top: 20px; right:10px;}
+
+
+/* buttons */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background:transparent; border:0}
+
+
+/* datepicker */
+.ui-datepicker    {border:1px solid #ccc}
+.ui-datepicker td {text-align:center}
+.ui-datepicker td span, .ui-datepicker td a {text-align:center}
+.ui-datepicker .ui-state-hover {color: #fff; background:#95c74e; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+
+.ui-datepicker tbody tr:nth-child(2n) td, .ui-datepicker tbody tr.even td {background: #f2f2f2;}
+
+
+/* jQuery.Rating  */
+div.rating-cancel,div.star-rating {float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel {height: 0; width: 0;}
+
+div.rating-cancel,div.rating-cancel a {background:url("../images/rating/delete.gif") no-repeat 0 -16px}
+div.star-rating, div.star-rating    a {background:url("../images/rating/star.gif") no-repeat 0 0px}
+div.rating-cancel a,div.star-rating a {display:block; width:16px; height:100%; background-position:0 0; border:0}
+div.star-rating-on                  a {background-position:0 -16px!important}
+div.star-rating-hover               a {background-position:0 -32px}
+div.star-rating-readonly            a {cursor:default !important} /* Read Only CSS */
+
+div.star-rating{background:transparent!important;overflow:hidden!important} /* Partial Star CSS */

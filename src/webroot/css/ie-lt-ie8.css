@@ -1,0 +1,118 @@
+/* IE styles - LT IE8
+***************************************************************************************************/
+
+/* reset.css */
+legend {position:relative; zoom:1;} /* fix negative margins */
+svg, .clear {zoom:1;} /* add zoom:1 to overflow:hidden */
+sup, sub {zoom:1;} /* add zoom:1 to pos:relative elements */
+input, button {overflow:visible;} /* add overflow:visible to (submit) buttons */
+
+
+/* grids.css */
+.grid .grids {zoom:1;} /* fix negative margins */
+.grid {zoom:1;} /* add zoom:1 to pos:relative elements */
+
+
+/* layouts.css */
+/* add display:inline to floated elements */
+#topheader .search .search,
+.videos .block-body2 .images a,
+.thumb .label,
+.thumb .value,
+#submenu ul,
+#submenu li,
+#footer .menu,
+#footer .menu li,
+.block-head2 .filter,
+div.profile .label,
+div.profile .value,
+div.profile2 .label,
+div.profile2 .value,
+.medialist .photo,
+.medialist .info,
+.pager li,
+.eventview .calend-create,
+.eventview .calend-list,
+.caruselle-block .next,
+.caruselle-block .prev,
+.caruselle-block .caruselle,
+.grid-event .label,
+.grid-event .value,
+body:before,
+.fl,
+.fr,
+#horizontal_menu li,.event-tabs li {display:inline;}
+
+/* convert min height values */
+#wrapper {height:100%;}
+html,body {height:100%;}
+
+
+/* fix negative margins */
+#footer,
+.mainblock,
+.block-head span span,
+.block-body,
+.block-head2 .filter,
+.block-head5 span span,
+.event-tabs,
+.event_tab,
+.team.tagblock,
+body:before {position:relative; zoom:1;}
+
+/* add zoom:1 to overflow:hidden */
+.search .list_item,
+.thumb p,
+div.userpic .personalurl,
+.grid-event p,
+div.profile p,
+div.profile2 p {zoom:1;}
+
+/* add zoom:1 to pos:relative elements */
+#wrapper,
+#wrapper-inner,
+#topheader,
+#content,
+#center,
+.sidebar2,
+.mainblock-inner,
+#horizontal_menu,
+.mainblock-inner2,
+.team,
+#main,
+.topmenu,
+.block-head,
+.block-head5 {zoom:1;}
+
+
+/* icons.css */
+strong.icon {position:relative; zoom:1;} /* fix negative margins */
+strong.icon-small {zoom:1;} /* add zoom:1 to overflow:hidden */
+strong.icon, strong.icon-small {zoom:1; display:inline;} /* add zoom:1; display:inline; to inline-block elements */
+
+
+/* controls.css */
+button.control,div.control,a.control,.control span, .topmenu ul, .topmenu li,.topmenu a, .buttons .shadow1 {display:inline;} /* add display:inline to floated elements */
+.control span span, .topmenu a, .topmenu p, button.control {position:relative; zoom:1;} /* fix negative margins */
+.buttons .shadow1 {zoom:1;} /* add zoom:1 to overflow:hidden */
+button.control span {zoom:1;} /* add zoom:1 to pos:relative elements */
+button.control {zoom:1; display:inline;} /* add zoom:1; display:inline; to inline-block elements */
+
+
+/* forms.css */
+/* add display:inline to floated elements */
+.form .row .form-info,
+.form .checkbox input,
+.form .checkbox label,.form .row.radio.inline .form-items,.form .form-box,
+.form .row.input.wide label,.form .row.select.wide label,
+.form .row.input.wide input,.form .row.select.wide select,.form .row.wide .form-head,.form .row.wide .form-items,
+.form .row.input.inline,.form .row.select.inline,.form .row.radio.inline {display:inline;}
+
+.form .list_item {zoom:1;} /* add zoom:1 to overflow:hidden */
+.form, .form .row {zoom:1;} /* add zoom:1 to pos:relative elements */
+
+
+/* jqueryui.css */
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset, div.rating-cancel,div.star-rating {display:inline;} /* add display:inline to floated elements */
+div.rating-cancel, div.star-rating, div.star-rating {zoom:1;} /* add zoom:1 to overflow:hidden */
+.ui-widget-overlay {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);} /* add transparancy */

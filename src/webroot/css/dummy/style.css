@@ -1,0 +1,210 @@
+.border-box{
+    border: solid 1px #000;
+}
+.datepicker{
+    background: url('/images/dummy/b_calendar.png') #fff no-repeat right;
+}
+
+.dropdownlist{
+    display: none;
+    float: left;
+    position: absolute;
+    border: solid 1px #E5ECF9;
+    background-color: #fff;
+    max-height: 150px;
+    width: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px;
+}
+.list_item{
+    width:340px;
+    overflow: hidden;
+    height:20px;
+}
+.list_item_hover{
+    background-color: #006699;
+    color: #fff;
+
+}
+
+#footer{
+    text-align: center;
+    margin-top:20px;
+}
+#footer a{
+    margin:0 20px;
+}
+
+#horizontal_menu li{
+    float: left;
+    padding: 3px;
+    margin-right: 6px;
+    display: inline;
+    background-color: #E5ECF9;
+}
+
+.bborder{
+    border-bottom: solid 1px #0066cc;
+}
+.thumb{
+    height:160px;
+}
+
+.thumb img{
+    border: 1px solid #E5ECF9;
+    max-height: 110px;
+}
+
+.social_buttons{
+    float: right;
+}
+
+.comments  .comments-form textarea{
+    width: 190px;
+}
+
+.comments, .event_comments {
+    background-color: #F6F6EF;
+    padding: 5px;
+}
+
+.userpic{
+    max-width: 200px
+}
+.caruselle img{
+    cursor: pointer;
+    border: 1px solid #E5ECF9;
+    max-height: 50px;
+    max-width: 80px;
+    padding: 1px;
+    margin: 2px;
+}
+.next, .prev{
+    cursor: pointer;
+    padding:2px;
+}
+
+.eventview{
+    float: right;
+}
+.calend-title{
+    text-align: center;
+}
+
+.monthly_calendar{
+    border: solid 1px #C0C0E8;
+    border-collapse: collapse;
+    
+}
+
+.monthly_calendar th{
+    background-color:#D8D8E8 ;
+    border: solid 1px #C0C0E8;
+}
+.monthly_calendar td{
+    width: 74px;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    vertical-align: top;
+    border: solid 1px #C0C0E8;
+}
+
+.monthly_day_title{
+    width: 94px;
+    padding:0px 3px;
+    margin: 0px;
+    height: 16px;
+    background-color:#EDEDF2 ;
+}
+
+.monthly_day_content{
+    width: 94px;
+    height: 80px;
+    padding:0px 3px;
+    margin: 0px;
+/*    overflow-y: scroll;*/
+    overflow-x: hidden;
+    vertical-align: top;
+    background-color:#fff ;
+}
+.event_stat_form{
+    width:100%;
+    display: none;
+}
+.tag_approve{
+    border: 1px solid #D8D8E8;
+    background-color: #EDEDF2;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.event_tab{
+    border: 1px solid #D8D8E8;
+    border-collapse: collapse;
+}
+.event_tab table{
+    border: 1px solid #D8D8E8;
+    margin:20px;
+    width:400px;
+    border-collapse: collapse;
+}
+.event_tab td{
+    border: 1px solid #D8D8E8;
+}
+.event_tab th{
+    border: 1px solid #D8D8E8;
+    background-color: #EDEDF2;
+}
+.event_tab table table{
+    border: none;
+    width:120px;
+}
+.event_tab table table td{
+    border: none;
+}
+
+
+.event_cell {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid #FFD324;
+    background-color: #FFF6BF;
+}
+.calend td{
+    height:30px;
+    padding:0px;
+}
+.calend th{
+    width: 50px;
+    padding:0px 5px;
+}
+
+.days_of_week{
+    border-collapse: collapse;
+}
+
+.days_of_week td{
+    border: 1px solid #D8D8E8;
+    width: 101px;
+}
+
+.days_of_week .selected{
+    background-color: #EDEDF2;
+}
+
+.weekly .weekday, .weekly .workday{
+    width: 100px
+}
+
+.banned-users{background: #eee; padding: 5px;}
+
+.current_page{
+    font-weight: bold;
+}

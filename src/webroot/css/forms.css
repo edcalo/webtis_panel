@@ -1,0 +1,131 @@
+/* Forms - general
+***************************************************************************************************/
+.form {clear:both; display:block; position:relative}
+
+.form-block .block-body3 {margin:15px 0}
+
+.form .row          {margin:0 0 15px 0; clear:both; display:block; position:relative; z-index:1}
+.form .row.last     {margin:0}
+.form .row.bordered      {margin:0; padding:5px 0; border-bottom:1px solid #e5e5e5}
+.form .row.last.bordered {border:0}
+
+.form input, .form select, .form textarea {display:block; border:1px solid #b3b3b3; position:relative; z-index:1; padding:11px 15px; margin:0; color:#a3a3a3; font-size:120%; background:#fff; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box; -moz-box-shadow: inset 2px 2px 5px #d9d9d9; -webkit-box-shadow: inset 2px 2px 5px #d9d9d9; box-shadow: inset 2px 2px 5px #d9d9d9;}
+.form label {color:#767676; display:block;}
+
+.form .row      .form-info   {margin:4px 15px 0 0; font-size:80%; text-decoration:none; display:block; float:left}
+.form .row.wide .form-info   {margin:4px 15px 0 5px;}
+
+.form .row a.form-info       {color:#305ba5;}
+.form .row a.form-info:hover {text-decoration:underline;}
+
+
+/* small form */
+.form.form-small input, .form.form-small select, .form.form-small textarea {display:block; border-bottom:1px solid #d9d9d9; border-top:1px solid #727272; border-left:1px solid #b4b4b4; border-right:1px solid #b4b4b4; padding:2px 5px; margin:0; color:#000; font-size:100%; background:#fff; -webkit-border-radius:1px; -moz-border-radius:1px; border-radius:1px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box; -moz-box-shadow: inset 1px 1px 1px #cbcbcb; -webkit-box-shadow: inset 1px 1px 1px #cbcbcb; box-shadow: inset 1px 1px 1px #cbcbcb;}
+
+
+/* normal form elements */
+.form .input       {}
+.form .input label {}
+.form .input input {}
+
+.form .textarea label    {display:block; margin-bottom:5px}
+.form .textarea textarea {}
+
+.form .radio       {}
+.form .radio label {}
+.form .radio input {border:0 !important; padding:0 !important; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
+
+.form .radio .form-items input {}
+.form .radio .form-items label {color:#000; font-weight:normal}
+
+.form .checkbox       {}
+.form .checkbox label {float:left}
+.form .checkbox input {float:left; margin:4px 10px 4px 4px; border:0 !important; padding:0 !important; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
+
+.form .forgot   {text-align:right; color:#38568d; font-size:90%; font-weight:bold}
+.form .forgot a {color:#38568d}
+
+
+/* form buttons */
+.form .row.buttons label {margin-top:10px !important}
+.form .row.buttons input {margin-top:14px !important}
+
+
+/* forw - wide */
+.row.wide:after  {clear: both; content: '.'; display: block; visibility: hidden; height: 0;}
+.row.wide        {display: inline-block;}
+* html .row.wide {height: 1%;}
+.row.wide        {display: block;}
+
+.form .row.input.wide label {width:200px; float:left; margin-top:2px}
+.form .row.input.wide input {width:200px; float:left}
+
+.form .row.select.wide label  {width:200px; float:left; margin-top:2px}
+.form .row.select.wide select {width:200px; float:left}
+
+.form .row.wide .form-head  {width:200px; float:left}
+.form .row.wide .form-items {width:200px; float:left}
+
+.form .row.radio.wide input             {display:inline; margin:1px 6px 0 0}
+.form .row.radio.wide label             {display:inline; margin:0 5px 0 0; color:#000; font-weight:normal}
+.form .row.radio.wide .form-head label  {display:block; margin:0; color:#767676; font-weight:bold; display: block;}
+.form .row.radio.wide .form-items input {display:inline; margin:2px 3px 0 0}
+.form .row.radio.wide .form-items label {display:inline; margin:0 5px 0 0; color:#000; font-weight:normal}
+
+/* forw - inline */
+.form .row.input.inline  {float:left; clear:none; margin:0 10px 0 0}
+.form .row.select.inline {float:left; clear:none; margin:0 10px 0 0}
+.form .row.radio.inline  {float:left; clear:none; margin:0 10px 0 0}
+
+.form .row.radio.inline .form-items       {float:left}
+.form .row.radio.inline .form-items input {display:inline; margin:2px 3px 0 0}
+.form .row.radio.inline .form-items label {display:inline; margin:0 5px 0 0; color:#000; font-weight:normal}
+
+select.w50px  {width:62px !important}
+select.w60px  {width:72px !important}
+select.w70px  {width:82px !important}
+select.w80px  {width:92px !important}
+select.w100px {width:112px !important}
+select.w150px {width:162px !important}
+select.w200px {width:212px !important}
+
+
+/* floated elements */
+.form .form-inline-button  {margin:2px 30px 0 0}
+
+
+/* form errors */
+.form div.error, .form div.alert, .form div.notice, .form div.success, .form div.info {width:194px; clear:both; margin:5px 0; padding: 3px 8px; border: 1px solid #DDDDDD;}
+.form div.error, .form div.alert {background: #FBE3E4; border-color: #FBC2C4; color: #8A1F11;}
+
+.message.error, .message.alert, .message.notice, .message.success, .message.info {width:auto !important; margin:5px 0 10px 0 !important;}
+
+.message.error, .message.alert {background: #FBE3E4; border-color: #FBC2C4; color: #8A1F11;}
+.message.notice  {background: none repeat scroll 0 0 #FFF6BF; border-color: #FFD324; color: #514721;}
+.message.success {background: none repeat scroll 0 0 #E6EFC2; border-color: #C6D880; color: #264409;}
+.message.info    {background: none repeat scroll 0 0 #D5EDF8; border-color: #92CAE4; color: #205791;}
+
+.message.error a, .message.alert a {color: #8A1F11;}
+.message.notice a  {color: #514721;}
+.message.success a {color: #264409;}
+.message.info a    {color: #205791;}
+
+
+/* form input - datepicker */
+input.datepicker {background: #fff url("../images/calendar.png") no-repeat 99% center !important;}
+
+
+/* form dropdownlist */
+.form .dropdownlist               {z-index:1000; min-height:24px; top:20px; background-color: #FFFFFF; border: 1px solid #E5ECF9; display: none; float: left; max-height: 150px; overflow-x: hidden; overflow-y: auto; padding: 5px; position: absolute; width: 250px;}
+.form .row.bordered .dropdownlist {top:25px;}
+
+.form .list_item       {height: 20px; overflow: hidden; width: 340px; padding:2px 5px}
+.form .list_item_hover {background-color: #21417c; color: #FFFFFF; cursor:pointer}
+
+
+/* form box */
+.form .form-box {float:left}
+/*
+.form .form-box input                 {float:none}
+.form .row.input.wide .form-box input {float:none}
+*/

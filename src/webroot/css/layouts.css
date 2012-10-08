@@ -1,0 +1,440 @@
+/* * Layouts
+***************************************************************************************************/
+#wrapper       {position:relative;}
+#wrapper-inner {position:relative;}
+#main          {position:relative;}
+#topheader     {position:relative; height:61px; padding:26px 0 0 0; background:url('../img/bg0.jpg') no-repeat center top}
+#content       {position:relative; padding:50px 0 80px 0;}
+#footer        {position:relative; background:url('../img/bg1.png') repeat-x 0 0; -webkit-border-radius:6px 6px 0 0; -moz-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+#center        {position:relative; background:url('../img/bg3.png') repeat-x 0 0}
+body.frontpage #content {padding-top:0 !important; width:100% !important}
+body.mm                 {margin:0 !important}
+body.mm.index  #content {width:100% !important}
+
+#moviemasher_container  {height:620px; margin:0 20px}
+
+#submenu       {position:absolute; top:87px; width:100%; background:url('../img/bg4.png') repeat-x 0 0; height:32px; z-index:100}
+
+.topmenu       {position:relative}
+
+
+/* * Header
+***************************************************************************************************/
+#topheader .search               {text-align:right}
+#topheader .search .search       {float:right}
+#topheader .search a             {text-align:right; display:block; font-size:90%; color:#5e77a4; margin:2px 10px 0 0; text-decoration:none}
+#topheader .search .dropdownlist {}
+#topheader .search input         {margin:0 !important; padding:0 5px 0 5px !important; height:27px; width:120px; cursor:text; border:0 !important; color:#a3a3a3 !important; background:transparent !important}
+
+
+/* * Header search dropdown list
+***************************************************************************************************/
+.search .dropdownlist    {z-index:100; min-height:24px; top:27px; margin:0 13px; background-color: #FFFFFF; border: 1px solid #E5ECF9; display: none; max-height: 150px; overflow-x: hidden; overflow-y: auto; padding: 5px; position: absolute; width: 184px;}
+.search .list_item       {height: 20px; overflow: hidden; padding:2px 5px}
+.search .list_item_hover {background-color: #21417c; color: #FFFFFF;}
+
+
+/* * Frontpage
+***************************************************************************************************/
+.welcome       {background:url('../img/bg0.jpg') no-repeat center -86px; margin-bottom:40px}
+.welcome-inner {border-top:1px solid #436196; padding:80px 0 50px 0}
+.welcome h1 {color:#ffffff; margin-bottom:30px}
+.welcome p  {color:#c1d7ff; font-size:135%; line-height:160%; -moz-text-shadow: 1px 1px 1px #10203d; -webkit-text-shadow: 1px 1px 1px #10203d; text-shadow: 1px 1px 1px #10203d;}
+.welcome a  {color:#c1d7ff;}
+
+/* Frontpage - images block */
+.videos .block-body2 .images        {clear:both}
+.videos .block-body2 .images a      {float:left; margin:0 12px 15px 0}
+.videos .block-body2 .images a.last {margin-right:0}
+.videos .block-body2 .images img    {border:3px solid #d8d8d8}
+
+/* Frontpage - featured video */
+.featured .block-body2 a {margin:0 0 16px 0; display:block}
+
+/* Frontpage - user info */
+.thumb img    {margin:0 0 5px 0; display:block;}
+.thumb p      {clear:both; padding:1px 0; margin:0; border-bottom:1px solid #f4f4f4; display:block; font-size:110%; overflow:hidden}
+.thumb p.last {border:0}
+.thumb .label {display:block; float:left; width:50%; color:#929292}
+.thumb .value {display:block; float:left; width:50%; color:#5e77a4}
+
+
+/* * Sidebar - user info
+***************************************************************************************************/
+.thumb.quickstats        {margin:0 0 40px 0}
+.thumb.quickstats p      {padding:3px 0;}
+.thumb.quickstats .label {color:#929292; font-size:95%; font-weight:bold}
+.thumb.quickstats .value {color:#638f51; font-size:95%; font-weight:bold}
+
+
+/* * Sidebar - user picture
+***************************************************************************************************/
+div.userpic     {margin:0 0 60px 0}
+div.userpic h2  {font-weight:bold}
+div.userpic img { margin:10px 0}
+div.userpic a   {color:#555555; text-decoration:none}
+div.userpic .personalurl {overflow:hidden; width:215px; display:block}
+
+
+/* * Sidebar - invite friend
+***************************************************************************************************/
+.sidebar_invites       {background:#335693; border:1px solid #112548; color:#fff; padding:10px}
+.sidebar_invites h2    {color:#fff; font-size:12pt; font-weight:bold}
+
+
+/* * Sidebar - right
+***************************************************************************************************/
+.sidebar2 {margin:0; position:relative; z-index:1000}
+.sidebar2 .block-head5 {margin-top:34px !important}
+
+
+/* * Main block
+***************************************************************************************************/
+.mainblock       {position:relative; z-index:99; margin:-1px 0 0 0; background:url('../img/bg6.png') repeat-x 0 0; padding:1px}
+.mainblock-inner {position:relative; background:#fff url('../img/bg7.png') repeat-x 0 0; padding:20px 10px 40px 10px}
+
+
+/* * Submenu
+***************************************************************************************************/
+#submenu ul {float:right; list-style:none; margin:0; padding:0}
+#submenu li {margin:0; padding:0; line-height:31px; float:left; font-weight:bold; color:#fff; height:32px; background:url('../img/bg5.png') repeat-x 0 0}
+#submenu a  {text-decoration:none; color:#fff; margin:0; padding:0 20px}
+
+
+/* * Footer
+***************************************************************************************************/
+#footer .logo      {margin:0; padding:0}
+#footer .copyright {margin:0; padding:0; color:#767676; font-size:90%}
+#footer .menu      {margin:0; padding:0; list-style:none; float:right}
+#footer .menu li   {margin:0; padding:0; float:left; margin:0 0 0 10px}
+#footer .menu li a {color:#38568d}
+
+
+/* * User Horizontal Menu
+***************************************************************************************************/
+#horizontal_menu             {margin:0; padding:0; list-style:none; position:relative; z-index:100; }
+#horizontal_menu li          {margin:0; padding:0; float:left;}
+#horizontal_menu a           {margin:0; padding:7px 10px; font-weight:bold; color:#555555; text-decoration:none; display:block}
+#horizontal_menu li.active   {border:1px solid #d9d9d9; border-bottom:0; background:#f9f9f9}
+#horizontal_menu li.active a {color:#000; padding:7px 15px;}
+#horizontal_menu a.mmasher   {color:#888;}
+
+
+/* * Tables
+***************************************************************************************************/
+table th {padding:5px 10px; color:#828282; background:#f5f5f5; font-weight:bold; border-bottom:1px solid #f4f4f4; line-height:normal}
+table td {padding:5px 10px; color:#828282; background:#fff; border-bottom:1px solid #f4f4f4}
+
+table td.checkbox input {margin-top:5px}
+
+table.settings th {background:#234175; color:#fff}
+table.settings td {border-right:1px solid #f4f4f4}
+
+
+/* * Block 1
+***************************************************************************************************/
+.block-head           {position:relative; z-index:10; font-size:1em; margin:0 !important; padding:0 !important; display:block}
+.block-head span      {background:url('../img/controls.png') no-repeat; display:block; height:45px; line-height:38px; font-weight:normal;}
+.block-head span      {background-position:0    -216px; margin:0 12px 0 0;  padding:0 0 0 12px;}
+.block-head span span {background-position:100% -216px; margin:0 -12px 0 0; padding:0 10px 0 0px; color:#fff; text-align:left; font-weight:bold; font-size:110%; text-shadow: 0 1px 1px #678a36;}
+
+.block-body {position:relative; z-index:9; margin:-7px 0 0 0; padding:12px; background:#fff url('../img/bg2.png') repeat-x left top; border:1px solid #e8e8e8; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+
+
+/* * Block 2
+***************************************************************************************************/
+.block-head2 {height:24px; margin:0 !important; padding:5px 0 !important; border-bottom:1px solid #ccc; font-weight:bold; color:#294a85; font-size:11pt; clear:both; display:block}
+.block-body2 {padding:10px 0;}
+
+.block-head2 .filter {display:block; font-size:80%; background:#b2b2b2; padding:4px 10px; margin:-2px 10px 0 0; color:#fff; font-weight:normal; float:right; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+.block-head2 a       {text-decoration:none}
+
+
+/* * Block 3
+***************************************************************************************************/
+.block-head3          {height:24px; padding:5px 0; margin:0 !important; border-bottom:1px solid #ccc; font-weight:bold; color:#000; font-size:12pt; clear:both; display:block}
+.block-body3          {padding:10px 0;}
+.block-head3.noborder {border:0}
+
+
+/* * Block 4
+***************************************************************************************************/
+.block-head4   {padding:0 0 5px 0; margin:10px 0 10px 0 !important; font-weight:bold; color:#000; font-size:20pt; clear:both; display:block}
+.block-body4   {padding:10px 0; font-size:120%}
+h2.block-head4 {margin:0 !important; font-weight:normal; color:#969696; font-size:13pt;}
+
+.block-head4.border  {border-bottom:1px solid #dadada}
+.block-head4 .edited {padding-top: 4px;}
+
+.center .block-head4 {text-align:center}
+.center .block-body4 {text-align:center}
+
+a.icons      {text-decoration:none;}
+a.icons span {text-decoration:underline;}
+
+
+/* * Block actions
+***************************************************************************************************/
+.block-actions   {margin:0px 0 0 10px;}
+.block-actions2  {margin:6px 0 0 10px;}
+.block-actions  a {font-weight:normal; font-size:10pt; text-decoration:none}
+.block-actions2 a {font-weight:normal; font-size:10pt; text-decoration:none}
+.block-actions span {padding: 0px 5px}
+.block-actions span:hover {background-color: #E5ECF9}
+
+/* * Block 5
+***************************************************************************************************/
+.block-head5           {position:relative; z-index:10; font-size:1em; margin:0 !important; padding:0 !important; display:block}
+.block-head5 span      {background:url('../img/controls.png') no-repeat; display:block; height:37px; line-height:32px; font-weight:normal;}
+.block-head5 span      {background-position:0    -365px; margin:0 12px 0 0;  padding:0 0 0 12px;}
+.block-head5 span span {background-position:100% -365px; margin:0 -12px 0 0; padding:0 10px 0 0px; color:#fff; text-align:left; font-weight:bold; font-size:110%; text-shadow: 0 1px 1px #678a36;}
+
+
+/* * Profile - Profile
+***************************************************************************************************/
+div.profile        {width: 515px;}
+div.profile p      {border-bottom:1px solid #e4e4e4; margin:0; padding:4px 0; overflow:hidden; }
+div.profile .label {font-weight:bold; color:#838383; float:left; width:20%}
+div.profile .value {float:left; width:80%; font-weight:bold; color:#23437b}
+
+div.profile2        {width: 245px;}
+div.profile2 p      {border-bottom:1px solid #e4e4e4; margin:0; padding:4px 0; overflow:hidden; }
+div.profile2 .label {font-weight:bold; color:#838383; float:left; width:40%}
+div.profile2 .value {float:left; width:60%; font-weight:bold; color:#23437b}
+
+div.profile  h3 {font-size: 1.2em; font-weight:bold}
+div.profile2 h3 {font-size: 1.2em; font-weight:bold} 
+
+ 
+/* * Profile - Photos
+***************************************************************************************************/
+div.photos      {}
+div.photos img  {border:3px solid #8c8c8c}
+div.photos h2   {height:auto; margin:5px 0; font-size:11pt; font-weight:bold}
+div.photos h2 a {text-decoration:none}
+
+
+/* * Advanced Search results
+***************************************************************************************************/
+.medialist .thumb      {margin:0 0 60px 0; font-size:90%}
+.medialist .photo      {float:left; margin:0 30px 0 0 }
+.medialist .info       {float:left; width:240px}
+.medialist .info.event {width:400px}
+.medialist h1          {padding:0 !important; border:0 !important;}
+
+.mediapager {}
+
+
+/* * Pager
+***************************************************************************************************/
+.pager    {list-style:none; margin:0; padding:0}
+.pager li {margin:0; padding:0; float:left; font-weight:bold; color:#0f2753}
+.pager a  {text-decoration:none; color:#0f2753; margin:0; padding:0}
+
+
+/* * Comments
+***************************************************************************************************/
+ .commentsblock       {background:url('../img/bg8.png') repeat-x 0 0; padding:1px; margin:20px 0}
+ .commentsblock-inner {background:#fff url('../img/bg7.png') repeat-x 0 0; padding:20px 10px}
+ .commentsblock h3    {color:#555555; margin:0 0 10px 0; padding:0 0 10px 0; border-bottom:1px solid #e1e1e1; font-weight:bold}
+
+ .comments dt {margin:0; padding:0; font-size:1.1em; color:#5a8c42; font-weight:bold}
+ .comments dd {margin:0; padding:0}
+
+
+/* * Calendar
+***************************************************************************************************/
+.eventview  {}
+.eventview .calend-create   {float:left; width:120px; font-size:90%}
+.eventview .calend-create a {text-decoration:none; padding:2px 5px; color:#fff; background:#a7a7a7; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box; }
+.eventview .calend-list     {float:right; width:120px; text-align:right; font-size:90%}
+.eventview .calend-title    {text-align:center; margin:0 120px; font-size:90%}
+.eventview .calend-title a        {text-decoration:none; padding:3px 7px; margin:0 5px; font-weight:bold}
+.eventview .calend-title a.active {background:#ebebeb; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
+
+.monthly_calendar       {background:#f8f8f8; border-collapse:collapse; border:1px solid #b3b3b3;}
+.monthly_calendar thead {}
+.monthly_calendar tbody {}
+.monthly_calendar thead th {background:#b3b3b3; padding:10px 5px; color:#fff; text-transform:uppercase;}
+.monthly_calendar tbody td {background:#f8f8f8; height:80px; border:1px solid #b3b3b3; padding:3px 5px}
+
+.monthly_calendar .monthly_day_title     {font-size:90%; font-weight:bold}
+.monthly_calendar .monthly_day_title   a {text-decoration:none; color:#a7a7a7} 
+.monthly_calendar .monthly_day_content   {font-size:90%; font-weight:bold}
+.monthly_calendar .monthly_day_content a {text-decoration:none; }
+
+.weekly_calendar       {border-collapse:collapse; border:1px solid #b3b3b3;}
+.weekly_calendar thead {}
+.weekly_calendar tbody {}
+.weekly_calendar thead .weekly_header th {text-transform:uppercase; border-bottom:0; padding-bottom:0}
+.weekly_calendar thead th {font-size:90%; background:#b3b3b3; padding:10px 5px; color:#fff;}
+.weekly_calendar thead th a {color:#fff; text-decoration:none;}
+.weekly_calendar tbody td {font-size:90%; background:#fff; border:1px solid #b3b3b3; padding:3px 5px}
+.weekly_calendar tbody a  {font-weight:bold; text-decoration:none; }
+
+.daily_calendar a {text-decoration:none; font-weight:bold}
+
+.days_of_week    {text-transform:uppercase; }
+.days_of_week td          {font-size:90%; text-align:center; padding:0 10px; height:41px; line-height:46px; background: url('../img/bg9.png') repeat-x left top; border:0}
+.days_of_week td.selected {background: url('../img/bga.png') repeat-x center top}
+.days_of_week td          a {text-decoration:none; font-weight:bold}
+.days_of_week td.selected a {color:#fff}
+
+
+/* * Blocks
+***************************************************************************************************/
+.box1        {display:block; color:#23447c !important; text-decoration:none; font-weight:bold; background:#e9eef5; border:1px solid #babfc9; font-size:140%; text-align:center; padding:50px 10px}
+.box1.inline {padding:5px 10px; margin:0 0 10px 0; text-align:left; font-size:120%}
+
+.box2        {display:block; background:#fbfbfb; padding:10px}
+
+
+/* * Caruselle
+***************************************************************************************************/
+.caruselle-block {}
+.caruselle-block .next      {display:block; float:left; height:30px; padding:20px 0 0 0; margin:0 0 0 17px}
+.caruselle-block .prev      {display:block; float:left; height:30px; padding:20px 0 0 0; margin:0 10px 0 0}
+.caruselle-block .caruselle {display:block; float:left; margin:0}
+.caruselle-block ul         {margin:0; padding:0; list-style:none; display:block}
+.caruselle-block li         {margin:0 10px 0 5px; padding: 2px; cursor: pointer; border: 1px solid #E5ECF9; height:auto !important; vertical-align:middle }
+.caruselle-block img        {width:67px; height:auto}
+
+
+/* * Tags
+***************************************************************************************************/
+.tagblock  {display:none; margin:10px 0; padding:5px; border:1px solid #dedede; background:#fbfbfb}
+
+
+
+/* * Event view
+***************************************************************************************************/
+.block-event {margin:0 0 40px 0}
+.grid-event {width:315px; padding:10px; border-top:1px solid #e7e7e7; margin:0 }
+.grid-event.left  {}
+.grid-event.right {padding:10px 20px; width:295px; border-left:1px solid #e7e7e7}
+
+.grid-event p      {clear:both; padding:5px 0; margin:0; display:block; font-size:110%; overflow:hidden}
+.grid-event .label {display:block; float:left; width:40%; margin:0 10% 0 0; color:#4b4b4b; text-align:right; font-weight:bold}
+.grid-event .value {display:block; float:left; width:50%; color:#4b4b4b}
+
+
+/* * Event view - tabs
+***************************************************************************************************/
+.mainblock-inner2 {position:relative; background:#fff url('../img/bgb.png') repeat-x 0 0; padding:0 0 40px 0}
+
+.event-tabs             {margin:-1px 0 0 -1px; padding:0; list-style:none; position:relative; z-index:100; }
+.event-tabs li          {margin:0; padding:0; float:left;}
+.event-tabs a           {margin:0; padding:7px 15px; font-weight:bold; color:#555555; text-decoration:none; display:block}
+.event-tabs li.active   {border:1px solid #d9d9d9; border-bottom:0; background:#f9f9f9}
+.event-tabs li.active a {color:#000; padding:6px 14px 7px 14px;}
+
+.event_tab              {border-top:1px solid #d9d9d9; position:relative; z-index:99; margin:-1px 0 0 0; padding:20px}
+
+
+
+/* * Teams edit
+***************************************************************************************************/
+.team              {position:relative; padding:20px 0 0 0; margin:0 0 10px 0}
+.team.tagblock     {margin:10px -10px; padding:10px 9px}
+
+.team .closebutton          {position:absolute; display:none; right:0; top:0}
+.team.tagblock .closebutton {right:5px; top:5px}
+.single_position .closebutton {float:right; position: inherit}
+
+/*.team .closebutton {right:5px; top:5px;  display:none;}*/
+
+/* * CSS Sticky footer
+***************************************************************************************************/
+html, body      {height: 100%; min-height: 100%;}
+#wrapper        {min-height: 100%;}
+#wrapper-inner  {overflow:auto; padding-bottom: 86px;}                                           /* must be same height as the footer */
+#footer         {position: relative; margin-top: -86px; height: 46px; padding:20px; clear:both;} /* margin-top = negative value of footer height */
+body:before     {content:""; height:100%; float:left; width:0; margin-top:-32767px;}             /* Opera Fix */
+
+* html #wrapper {display:table; height:100%}        /* IE6 hack */
+#wrapper        {display:table\0/; width:100%; height:100%\0/}  /* IE8 hack */
+
+
+/* * Helpers
+***************************************************************************************************/
+.fl {float:left !important}
+.fr {float:right !important}
+.fn {float:none !important}
+
+.dn {display:none !important}
+.db {display:block !important}
+.di {display:inline !important}
+
+.tal {text-align:left !important}
+.tar {text-align:right !important}
+.tac {text-align:center !important}
+
+.m0  {margin:0 !important}
+.ms  {margin:10px !important}
+.mm  {margin:20px !important}
+.ml  {margin:40px !important}
+.mt0 {margin-top:0 !important}
+.mts {margin-top:10px !important}
+.mtm {margin-top:20px !important}
+.mtl {margin-top:40px !important}
+.mb0 {margin-bottom:0 !important}
+.mbs {margin-bottom:10px !important}
+.mbm {margin-bottom:20px !important}
+.mbl {margin-bottom:40px !important}
+.ml0 {margin-left:0 !important}
+.mls {margin-left:10px !important}
+.mlm {margin-left:20px !important}
+.mll {margin-left:40px !important}
+.mr0 {margin-right:0 !important}
+.mrs {margin-right:10px !important}
+.mrm {margin-right:20px !important}
+.mrl {margin-right:40px !important}
+
+.p0  {padding:0 !important}
+.ps  {padding:10px !important}
+.pm  {padding:20px !important}
+.pl  {padding:40px !important}
+.pt0 {padding-top:0 !important}
+.pts {padding-top:10px !important}
+.ptm {padding-top:20px !important}
+.ptl {padding-top:40px !important}
+.pb0 {padding-bottom:0 !important}
+.pbs {padding-bottom:10px !important}
+.pbm {padding-bottom:20px !important}
+.pbl {padding-bottom:40px !important}
+.pl0 {padding-left:0 !important}
+.pls {padding-left:10px !important}
+.plm {padding-left:20px !important}
+.pll {padding-left:40px !important}
+.pr0 {padding-right:0 !important}
+.prs {padding-right:10px !important}
+.prm {padding-right:20px !important}
+.prl {padding-right:40px !important}
+
+.w50px  {width:50px !important}
+.w60px  {width:60px !important}
+.w70px  {width:70px !important}
+.w80px  {width:80px !important}
+.w100px {width:100px !important}
+.w150px {width:150px !important}
+.w160px {width:160px !important}
+.w200px {width:200px !important}
+.w240px {width:240px !important}
+.w250px {width:250px !important}
+.w300px {width:300px !important}
+.w350px {width:350px !important}
+.w400px {width:400px !important}
+.w500px {width:500px !important}
+
+.w25pr  {width:25% !important}
+.w50pr  {width:50% !important}
+.w75pr  {width:75% !important}
+.w100pr {width:100% !important}
+
+.h50px  {height:50px !important}
+.h100px {height:100px !important}
+.h150px {height:150px !important}
+.h200px {height:200px !important}
+.h250px {height:250px !important}
+.h300px {height:300px !important}
+.h400px {height:400px !important}

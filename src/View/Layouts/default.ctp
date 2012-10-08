@@ -1,4 +1,4 @@
- <?php
+<?php
 /**
  *
  * PHP 5
@@ -18,177 +18,176 @@
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-	<?php echo __('CakePHP: the rapid development php framework:'); ?>
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-		echo $this->Html->css('reset');
-		echo $this->Html->css('grid');
-		echo $this->Html->css('template');
-		?>
-		<!--[if IE 7]><?php echo  $this->Html->css('ie');?><![endif]-->
-		<?php
-			echo $this->Html->script('jquery.min');
-			echo $this->Html->script('jquery.validate');
-			echo $this->Html->script('js');
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
+    <head>
+        <?php echo $this->Html->charset(); ?>
+        <title> <?php echo $title_for_layout; ?> </title>
+        <?php
+        echo $this->Html->css('cake.generic');
+        echo $this->Html->meta('icon');
+        echo $this->Html->css('reset');
+        echo $this->Html->css('grids');
+        echo $this->Html->css('grids-temp');
+        echo $this->Html->css('layouts');
+        echo $this->Html->css('icons');
+        echo $this->Html->css('controls');
+        echo $this->Html->css('forms');
+        ?>
+        <link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"/>
+        <?php
+        echo $this->Html->css('jqueryui');
+        ?>      
 
-<style type="text/css">
-#contact_error {color: #ff8989;}
-</style>
-</head>
-<body>
-
-<div id="header2">
-	<div class="container_16 relative">
-		<div class="grid_4">
-			<?php echo 
-				$this->Html->link(
-				$this->Html->image('brand_idea.png', array('alt' => __('WebTIS'), 'border' => '0')),
-				'http://www.cakephp.org/',
-				array('target' => '_blank', 'escape' => false, 'class'=> 'brand_idea')
-				);				
-				?>
-
-		</div>
-		<div class="grid_12">
-				<ul class="main_nav">
-					<li class="current">
-					<?php echo $this->Html->link('Home', '', array('class'=>'more'))?>
-						
-						<ul>
-							<li><?php echo $this->Html->link('What We Do', '')?></li>
-							<li><?php echo $this->Html->link('Why Us', '')?></li>
-							<li><?php echo $this->Html->link('Success', '')?></li>
-						</ul>
-					</li>
-					<li class="">
-						<?php echo $this->Html->link('Services', '', array('class'=>'more'))?>
-						<ul>
-							<li><?php echo $this->Html->link('Software Development', '')?></li>
-							<li><?php echo $this->Html->link('Web Development', '')?></li>
-							<li><?php echo $this->Html->link('Quality Assurance', '')?></li>
-						</ul>
-					</li>
-					<li class="">
-						
-						<?php echo $this->Html->link('Careers', '', array('class'=>'more'))?>
-						<ul>
-							<li><?php echo $this->Html->link('Software Developer', '')?></li>
-							<li><?php echo $this->Html->link('Quality Assurance Engineering', '')?></li>					
-						</ul>
-					</li>
-					<li class="">
-						<?php echo $this->Html->link('Contact', '')?>
-					</li>
-				</ul>
-			<div class="clear"></div>
-		</div>
-		<div class="clear"></div>
-		<div class="grid_16" style="border-bottom: 2px solid #1e4f8a;">
-			<br>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-<div id="body">
-<?php echo $this->Session->flash(); ?>
-<?php echo $this->fetch('content'); ?>
-</div>
-
-<div id="footer" class="container_12">
-	<div class="grid_12" style="border-top: 2px solid #1e4f8a;">
-		<br>
-	</div>
-	<div class="clear"></div>
-	<div class="grid_4">
-		<div style="width: 50%; display: inline-block; zoom: 1; *display: inline;">
-			<?php echo 
-				$this->Html->link(
-				$this->Html->image('brand_idea_footer.png', array('alt' => __('WebTIS'), 'border' => '0')),
-				'http://www.cakephp.org/',
-				array('target' => '_blank', 'escape' => false, 'class'=> 'brand_idea')
-				);				
-				?>
-		</div>
-		<div style="width: 45%; margin-left: 2%; display: inline-block; zoom: 1; *display: inline;">
-			<ul class="social">
-				<li>
-				<?php echo 
-				$this->Html->link(
-				$this->Html->image('social/facebook_32.png', array('alt' => __('Encuentranos en Facebook'))),
-				'https://www.facebook.com/ideasoftBo',
-				array('target' => '_blank', 'escape' => false)
-				);				
-				?>
-				</li>
-				<li>
-				<?php echo 
-				$this->Html->link(
-				$this->Html->image('social/twitter_32.png', array('alt' => __('Encuentranos en Facebook'))),
-				'https://twitter.com/IdeaSoftinc',
-				array('target' => '_blank', 'escape' => false)
-				);				
-				?>
-				</li>
-				<li>
-				<?php echo 
-				$this->Html->link(
-				$this->Html->image('social/linkedin_32.png', array('alt' => __('Encuentranos en Facebook'))),
-				'http://www.linkedin.com/company/2330610?trk=tyah',
-				array('target' => '_blank', 'escape' => false)
-				);				
-				?>
-				</li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-		<hr>
-		<div>
-			&copy; 2012 Ideasoft Inc. All rights reserved.<br>
-		</div>
-	</div>
-	<div class="grid_2">
-		<b><?php echo $this->Html->link('Home', '')?></b><br>
-		<hr>
-		<ul>
-			<li><?php echo $this->Html->link('What We Do', '')?></li>
-							<li><?php echo $this->Html->link('Why Us', '')?></li>
-							<li><?php echo $this->Html->link('Success', '')?></li>
-		</ul>
-	</div>
-	<div class="grid_2">
-		<b><a href="">Services</a></b><br>
-		<hr>
-		<ul>
-			<li><a href="">Software Development</a></li>
-			<li><a href="">Web Development </a></li>
-			<li><a href="">Quality Assurance</a></li>
-		</ul>
-	</div>
-	<div class="grid_2">
-		<b><a href="">Careers</a></b><br>
-		<hr>
-		<ul>
-			<li><a href="">Software Developer</a></li>
-			<li><a href="">Quality Assurance Engineering</a></li>
-		</ul>
-	</div>
-	<div class="grid_2">
-		<b><a href="">Contact</a></b><br>
-		<hr>
-		<img alt="" src="img/icon_map.png">
-	</div>
-	<div class="clear"></div>
-</div>
+        <link rel="stylesheet" type="text/css" media="all" href="/uploadify/uploadify.css" />
 
 
-</body>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://yandex.st/jquery/form/2.67/jquery.form.min.js"></script>
+
+        <script type="text/javascript" src="/js/jcarousellite.js"></script>
+        <script type="text/javascript" src="/uploadify/swfobject.js"></script>
+        <script type="text/javascript" src="/uploadify/jquery.uploadify.v2.1.4.min.js"></script>
+        <?php
+        echo $this->Html->script('index');
+        echo $this->Html->script('jquery.enablePlaceholder');
+        echo $this->Html->script('jquery.MetaData');
+        echo $this->Html->script('jquery.rating.pack');
+
+        echo $this->Html->css('jquery.autocomplete');
+        echo $this->Html->script('jquery.autocomplete.pack');
+
+        echo $this->fetch('meta');
+        echo $this->fetch('css');
+        echo $this->fetch('script');
+        ?>
+        <script type="text/javascript">
+            $(function(){
+                $('.auto-submit-star').rating({
+                    callback: function(value, link){
+                        this.form.submit();
+                    }
+                });
+            });
+        </script>
+        <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="all" href="/css/ie-lt-ie8.css" /><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" type="text/css" media="all" href="/css/ie-ie8.css" /><![endif]-->
+
+    </head>
+    <!--body class="frontpage" -->
+    <body>
+        <!-- #wrapper -->
+        <div id="wrapper">
+            <div id="wrapper-inner">
+
+                <!-- #topheader -->
+                <div id="topheader">
+                    <div class="grids">
+                        <div class="logo grid grid-7">
+                            <a href="/"><img src="/img/logo.png" alt="" /></a>
+                        </div>
+                        <div class="topmenu grid grid-12">
+                            <div class="topmenu grid grid-12">
+                                <p><a href="/user/profile">Hello, Elvis Caceres</a></p>
+                                <div class="clearfix">
+                                    <ul>
+                                        <li class="active"><a href="/user/profile">Profile</a></li>
+                                        <li><a href="/user/settings">Settings</a></li>
+                                        <li><a href="/user/notifications">Notifications</a></li>
+                                        <li><a href="/user/change_pas">Change password</a></li>
+                                        <li><a href="/user/logout">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search grid grid-5">
+                            <div class="clearfix">
+                                <form action="/search/found/" method="post">
+                                    <div class="control search">
+                                        <span>
+                                            <span>
+                                                <input id="quicksearchtext" class="dropdown" type="text" name="searchstring" value="" placeholder="Search" autocomplete="off" />
+                                                <button class="blank" type="submit"><strong class="icon icon-search"></strong></button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="dropdownlist"></div>
+                                </form>
+                            </div>
+                            <div class="clearfix">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / #topheader -->
+
+                <!-- #submenu -->
+
+                <!--div id="submenu">
+                    <ul>
+                        <li class="active"><a href="/user/profile">Profile</a></li>
+                        <li><a href="/user/settings">Settings</a></li>
+                        <li><a href="/user/notifications">Notifications</a></li>
+                        <li><a href="/user/change_pas">Change password</a></li>
+                        <li><a href="/user/logout">Logout</a></li>
+                    </ul>
+                </div -->
+                <!-- / #submenu -->
+
+                <!-- #center -->
+                <div id="center">
+                    <div id="content" class="grids">
+                        <?php echo $this->Session->flash(); ?>
+                        <?php echo $this->fetch('content'); ?>
+                    </div>
+                </div>
+                <!-- / #center -->
+
+            </div>
+        </div>
+        <!-- / #wrapper -->
+
+        <!-- #footer -->
+        <div id="footer" class="grids">
+            <div class="grid grid-4">
+                <a class="logo" href="/"><img src="/images/logo-small.png" alt="" /></a>
+            </div>
+            <div class="grid grid-8">
+                <p class="copyright">&copy; Copyright 2012 WebTIS Front derechos reservados</p>
+            </div>
+            <div class="grid grid-12" style="float: right;">
+                <ul class="menu">
+                    <li>
+                        <?php
+                        echo $this->Html->link(
+                                __('Acerca de'), array('controller' => 'pages', 'action' => 'about')
+                        );
+                        ?>
+                    </li>
+                    <li>
+                        <?php
+                        echo $this->Html->link(
+                                __('FAQ'), array('controller' => 'faq', 'action' => 'index')
+                        );
+                        ?>
+                    </li>
+                    <li>
+                        <?php
+                        echo $this->Html->link(
+                                __('Términos y Condiciones'), array('controller' => 'pages', 'action' => 'politica')
+                        );
+                        ?>
+                    </li>
+                    
+                    <li>
+                        <?php
+                        echo $this->Html->link(
+                                __('Feedback'), array('controller' => 'contacto', 'action' => 'add')
+                        );
+                        ?>
+                </ul>
+            </div>
+        </div>
+        <!-- / #footer -->
+    </body>
 </html>
