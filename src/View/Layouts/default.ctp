@@ -44,7 +44,9 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
         <script type="text/javascript" src="http://yandex.st/jquery/form/2.67/jquery.form.min.js"></script>
 
-        <script type="text/javascript" src="/js/jcarousellite.js"></script>
+        <?php
+        echo $this->Html->script('jcarousellite');
+        ?>
         <script type="text/javascript" src="/uploadify/swfobject.js"></script>
         <script type="text/javascript" src="/uploadify/jquery.uploadify.v2.1.4.min.js"></script>
         <?php
@@ -83,18 +85,23 @@
                 <div id="topheader">
                     <div class="grids">
                         <div class="logo grid grid-7">
-                            <a href="/"><img src="/img/logo.png" alt="" /></a>
+                            <?php
+                            echo $this->Html->link(
+                                    $this->Html->image('logo.png', array('alt' => __('Logo WebTis'), 'border' => '0')), '/', array('escape' => false)
+                            );
+                            ?>
                         </div>
                         <div class="topmenu grid grid-12">
                             <div class="topmenu grid grid-12">
                                 <p><a href="/user/profile">Hello, Elvis Caceres</a></p>
                                 <div class="clearfix">
                                     <ul>
-                                        <li class="active"><a href="/user/profile">Profile</a></li>
-                                        <li><a href="/user/settings">Settings</a></li>
-                                        <li><a href="/user/notifications">Notifications</a></li>
-                                        <li><a href="/user/change_pas">Change password</a></li>
-                                        <li><a href="/user/logout">Logout</a></li>
+                                        <li class="active">
+                                            <?php echo $this->Html->link(__('Inicio'), '/'); ?>
+                                        </li>
+                                        <li><?php echo $this->Html->link(__('Qué WebTis'), '/'); ?></li>
+                                        <li><?php echo $this->Html->link(__('Preguntas Frecuentes'), '/'); ?></li>
+                                        <li><?php echo $this->Html->link(__('Contacto'), '/'); ?></li>
                                     </ul>
                                 </div>
                             </div>
@@ -150,7 +157,12 @@
         <!-- #footer -->
         <div id="footer" class="grids">
             <div class="grid grid-4">
-                <a class="logo" href="/"><img src="/images/logo-small.png" alt="" /></a>
+                <?php
+                echo $this->Html->link(
+                        $this->Html->image('logo-small.png', array('alt' => __('Logo WebTis'), 'border' => '0')), '/', array('escape' => false)
+                );
+                ?>
+
             </div>
             <div class="grid grid-8">
                 <p class="copyright">&copy; Copyright 2012 WebTIS Front derechos reservados</p>
@@ -164,13 +176,7 @@
                         );
                         ?>
                     </li>
-                    <li>
-                        <?php
-                        echo $this->Html->link(
-                                __('FAQ'), array('controller' => 'faq', 'action' => 'index')
-                        );
-                        ?>
-                    </li>
+
                     <li>
                         <?php
                         echo $this->Html->link(
@@ -178,11 +184,11 @@
                         );
                         ?>
                     </li>
-                    
+
                     <li>
                         <?php
                         echo $this->Html->link(
-                                __('Feedback'), array('controller' => 'contacto', 'action' => 'add')
+                                __('Contacto'), array('controller' => 'contacto', 'action' => 'add')
                         );
                         ?>
                 </ul>

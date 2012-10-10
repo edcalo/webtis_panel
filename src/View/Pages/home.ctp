@@ -24,7 +24,7 @@
                         <div class="buttons clearfix"><button class="control button1" type="submit"><span><span>Login</span></span></button></div>
                     </div>
                 </div>
-                <div class="row forgot last"><a href="/user/forgot_password">Forgot Password?</a></div>
+                <div class="row forgot last"><a href="/user/forgot_password">¿Has olvidado tu contrase&ntilde;a?</a></div>
             </form>
         </div>
     </div>
