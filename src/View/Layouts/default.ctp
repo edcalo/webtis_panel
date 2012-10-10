@@ -44,7 +44,6 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
         <script type="text/javascript" src="http://yandex.st/jquery/form/2.67/jquery.form.min.js"></script>
 
-        <script type="text/javascript" src="/js/jcarousellite.js"></script>
         <script type="text/javascript" src="/uploadify/swfobject.js"></script>
         <script type="text/javascript" src="/uploadify/jquery.uploadify.v2.1.4.min.js"></script>
         <?php
@@ -55,6 +54,9 @@
 
         echo $this->Html->css('jquery.autocomplete');
         echo $this->Html->script('jquery.autocomplete.pack');
+        
+        echo $this->Html->script('jquery.jcarousel.min');
+        echo $this->Html->css('skin_home');
 
         echo $this->fetch('meta');
         echo $this->fetch('css');
@@ -67,6 +69,7 @@
                         this.form.submit();
                     }
                 });
+                 jQuery('#mycarousel').jcarousel();
             });
         </script>
         <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="all" href="/css/ie-lt-ie8.css" /><![endif]-->
@@ -87,7 +90,7 @@
                         </div>
                         <div class="topmenu grid grid-12">
                             <div class="topmenu grid grid-12">
-                                <p><a href="/user/profile">Hello, Elvis Caceres</a></p>
+                                <!--p><a href="/user/profile">Hello, Elvis Caceres <span style="background-color: red; color: white; border-radius: 10px 10px 10px 10px;  width: 20px; padding: 3px;">4</span></a></p-->
                                 <div class="clearfix">
                                     <ul>
                                         <li class="active"><a href="/user/profile">Profile</a></li>
