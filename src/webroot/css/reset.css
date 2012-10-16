@@ -6,7 +6,7 @@ body {line-height: 1.5; background: white;} /* Line-height should always be unit
 
 b, strong {font-weight: bold;} /* Makes browsers agree. IE + Opera = font-weight: bold. Gecko + WebKit = font-weight: bolder. */
 
-img {color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic;} /* For IE. http://css-tricks.com/ie-fix-bicubic-scaling-for-images */
+/*img {color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic;} /* For IE. http://css-tricks.com/ie-fix-bicubic-scaling-for-images */
 
 ol, ul {list-style: none;}
 li {display: list-item;} /* For IE6 + IE7. */

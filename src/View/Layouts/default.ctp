@@ -31,25 +31,13 @@
         echo $this->Html->css('icons');
         echo $this->Html->css('controls');
         echo $this->Html->css('forms');
-        ?>
-        <link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"/>
-        <?php
+        echo $this->Html->css('jquery-ui');
         echo $this->Html->css('jqueryui');
-        ?>      
+        echo $this->Html->script('jquery-1.8.2');
+        echo $this->Html->script('jquery-ui.min');
 
-        <link rel="stylesheet" type="text/css" media="all" href="/uploadify/uploadify.css" />
-
-
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="http://yandex.st/jquery/form/2.67/jquery.form.min.js"></script>
-
-        <?php
+        echo $this->Html->script('jquery.form.min');
         echo $this->Html->script('jcarousellite');
-        ?>
-        <script type="text/javascript" src="/uploadify/swfobject.js"></script>
-        <script type="text/javascript" src="/uploadify/jquery.uploadify.v2.1.4.min.js"></script>
-        <?php
         echo $this->Html->script('index');
         echo $this->Html->script('jquery.enablePlaceholder');
         echo $this->Html->script('jquery.MetaData');
@@ -58,6 +46,13 @@
         echo $this->Html->css('jquery.autocomplete');
         echo $this->Html->script('jquery.autocomplete.pack');
 
+        echo $this->Html->script('jquery.jcarousel.min');
+        echo $this->Html->css('skin_home');
+        ?>
+        <!--[if lt IE 8]><?php echo $this->Html->css('ie-lt-ie8'); ?><![endif]-->
+        <!--[if IE 8]><?php echo $this->Html->css('ie-ie8'); ?><![endif]-->
+
+        <?php
         echo $this->fetch('meta');
         echo $this->fetch('css');
         echo $this->fetch('script');
@@ -69,10 +64,9 @@
                         this.form.submit();
                     }
                 });
+                jQuery('#mycarousel').jcarousel();
             });
         </script>
-        <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="all" href="/css/ie-lt-ie8.css" /><![endif]-->
-        <!--[if IE 8]><link rel="stylesheet" type="text/css" media="all" href="/css/ie-ie8.css" /><![endif]-->
 
     </head>
     <!--body class="frontpage" -->
@@ -93,13 +87,13 @@
                         </div>
                         <div class="topmenu grid grid-12">
                             <div class="topmenu grid grid-12">
-                                <p><a href="/user/profile">Hello, Elvis Caceres</a></p>
+                                <!--p><a href="/user/profile">Hello, Elvis Caceres <span style="background-color: red; color: white; border-radius: 10px 10px 10px 10px;  width: 20px; padding: 3px;">4</span></a></p-->
                                 <div class="clearfix">
                                     <ul>
                                         <li class="active">
                                             <?php echo $this->Html->link(__('Inicio'), '/'); ?>
                                         </li>
-                                        <li><?php echo $this->Html->link(__('Qué WebTis'), '/'); ?></li>
+                                        <li><?php echo $this->Html->link(__('Qué es WebTis'), '/'); ?></li>
                                         <li><?php echo $this->Html->link(__('Preguntas Frecuentes'), '/'); ?></li>
                                         <li><?php echo $this->Html->link(__('Contacto'), '/'); ?></li>
                                     </ul>
@@ -112,7 +106,7 @@
                                     <div class="control search">
                                         <span>
                                             <span>
-                                                <input id="quicksearchtext" class="dropdown" type="text" name="searchstring" value="" placeholder="Search" autocomplete="off" />
+                                                <input id="quicksearchtext" class="dropdown" type="text" name="searchstring" value="" placeholder="Buscar" autocomplete="off" />
                                                 <button class="blank" type="submit"><strong class="icon icon-search"></strong></button>
                                             </span>
                                         </span>
@@ -176,7 +170,13 @@
                         );
                         ?>
                     </li>
-
+                    <li>
+                        <?php
+                        echo $this->Html->link(
+                                __('Preguntas Frecuentas'), array('controller' => 'faq', 'action' => 'index')
+                        );
+                        ?>
+                    </li>
                     <li>
                         <?php
                         echo $this->Html->link(
@@ -184,13 +184,6 @@
                         );
                         ?>
                     </li>
-
-                    <li>
-                        <?php
-                        echo $this->Html->link(
-                                __('Contacto'), array('controller' => 'contacto', 'action' => 'add')
-                        );
-                        ?>
                 </ul>
             </div>
         </div>
