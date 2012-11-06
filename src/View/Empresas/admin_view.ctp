@@ -1,5 +1,5 @@
 <div class="empresas view">
-<h2><?php  echo __('Empresa');?></h2>
+<h2><?php  echo __('Empresa'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
@@ -14,6 +14,21 @@
 		<dt><?php echo __('Sigla'); ?></dt>
 		<dd>
 			<?php echo h($empresa['Empresa']['sigla']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Logo'); ?></dt>
+		<dd>
+			<?php echo h($empresa['Empresa']['logo']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Email Contacto'); ?></dt>
+		<dd>
+			<?php echo h($empresa['Empresa']['email_contacto']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Fecha Registro'); ?></dt>
+		<dd>
+			<?php echo h($empresa['Empresa']['fecha_registro']); ?>
 			&nbsp;
 		</dd>
 	</dl>

@@ -147,7 +147,8 @@ table.settings td {border-right:1px solid #f4f4f4}
 .block-body2 {padding:10px 0;}
 
 .block-head2 .filter {display:block; font-size:80%; background:#b2b2b2; padding:4px 10px; margin:-2px 10px 0 0; color:#fff; font-weight:normal; float:right; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; background-clip: padding-box;}
-.block-head2 a       {text-decoration:none}
+.block-head2 a       {text-decoration:none; color: #294A85;}
+.block-head2 a:hover {text-decoration:underline;}
 
 
 /* * Block 3

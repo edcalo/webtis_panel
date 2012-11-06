@@ -78,24 +78,23 @@
                 <!-- #topheader -->
                 <div id="topheader">
                     <div class="grids">
-                        <div class="logo grid grid-7">
+                        <div class="logo grid grid-6">
                             <?php
                             echo $this->Html->link(
                                     $this->Html->image('logo.png', array('alt' => __('Logo WebTis'), 'border' => '0')), '/', array('escape' => false)
                             );
                             ?>
                         </div>
-                        <div class="topmenu grid grid-12">
-                            <div class="topmenu grid grid-12">
+                        <div class="topmenu grid grid-13">
+                            <div class="topmenu grid grid-13">
                                 <!--p><a href="/user/profile">Hello, Elvis Caceres <span style="background-color: red; color: white; border-radius: 10px 10px 10px 10px;  width: 20px; padding: 3px;">4</span></a></p-->
                                 <div class="clearfix">
                                     <ul>
-                                        <li class="active">
-                                            <?php echo $this->Html->link(__('Inicio'), '/'); ?>
-                                        </li>
-                                        <li><?php echo $this->Html->link(__('Qué es WebTis'), '/'); ?></li>
-                                        <li><?php echo $this->Html->link(__('Preguntas Frecuentes'), '/'); ?></li>
-                                        <li><?php echo $this->Html->link(__('Contacto'), '/'); ?></li>
+                                        <li class="<?php echo ($page=="home")?"active":""?>"><?php echo $this->Html->link(__('Inicio'), '/'); ?></li>
+                                        <li class="<?php echo ($page=="")?"active":""?>"><?php echo $this->Html->link(__('WebTis'), '/'); ?></li>
+                                        <li class="<?php echo ($page=="empresas")?"active":""?>"><?php echo $this->Html->link(__('Empresas WebTis'), array("controller"=>"empresas", "action"=>"index")); ?></li>
+                                        <li class="<?php echo ($page=="faqs")?"active":""?>"><?php echo $this->Html->link(__('Preguntas Frecuentes'), array("controller"=>"faqs", "action"=>"index")); ?></li>
+                                        <li class="<?php echo ($page=="")?"active":""?>"><?php echo $this->Html->link(__('Contacto'), '/'); ?></li>
                                     </ul>
                                 </div>
                             </div>
@@ -173,7 +172,7 @@
                     <li>
                         <?php
                         echo $this->Html->link(
-                                __('Preguntas Frecuentas'), array('controller' => 'faq', 'action' => 'index')
+                                __('Contacto'), array('controller' => 'pages', 'action' => 'contacto')
                         );
                         ?>
                     </li>

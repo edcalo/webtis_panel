@@ -1,11 +1,14 @@
 <div class="empresas index">
-	<h2><?php echo __('Empresas');?></h2>
+	<h2><?php echo __('Empresas'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
-			<th><?php echo $this->Paginator->sort('nombre_empresa');?></th>
-			<th><?php echo $this->Paginator->sort('sigla');?></th>
-			<th class="actions"><?php echo __('Actions');?></th>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('nombre_empresa'); ?></th>
+			<th><?php echo $this->Paginator->sort('sigla'); ?></th>
+			<th><?php echo $this->Paginator->sort('logo'); ?></th>
+			<th><?php echo $this->Paginator->sort('email_contacto'); ?></th>
+			<th><?php echo $this->Paginator->sort('fecha_registro'); ?></th>
+			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
 	foreach ($empresas as $empresa): ?>
@@ -13,6 +16,9 @@
 		<td><?php echo h($empresa['Empresa']['id']); ?>&nbsp;</td>
 		<td><?php echo h($empresa['Empresa']['nombre_empresa']); ?>&nbsp;</td>
 		<td><?php echo h($empresa['Empresa']['sigla']); ?>&nbsp;</td>
+		<td><?php echo h($empresa['Empresa']['logo']); ?>&nbsp;</td>
+		<td><?php echo h($empresa['Empresa']['email_contacto']); ?>&nbsp;</td>
+		<td><?php echo h($empresa['Empresa']['fecha_registro']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $empresa['Empresa']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $empresa['Empresa']['id'])); ?>
