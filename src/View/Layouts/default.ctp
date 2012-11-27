@@ -31,8 +31,6 @@
         echo $this->Html->css('icons');
         echo $this->Html->css('controls');
         echo $this->Html->css('forms');
-        echo $this->Html->css('jquery-ui');
-        echo $this->Html->css('jqueryui');
         echo $this->Html->script('jquery-1.8.2');
         echo $this->Html->script('jquery-ui.min');
 
@@ -41,13 +39,11 @@
         echo $this->Html->script('index');
         echo $this->Html->script('jquery.enablePlaceholder');
         echo $this->Html->script('jquery.MetaData');
-        echo $this->Html->script('jquery.rating.pack');
 
         echo $this->Html->css('jquery.autocomplete');
         echo $this->Html->script('jquery.autocomplete.pack');
 
-        echo $this->Html->script('jquery.jcarousel.min');
-        echo $this->Html->css('skin_home');
+        
         ?>
         <!--[if lt IE 8]><?php echo $this->Html->css('ie-lt-ie8'); ?><![endif]-->
         <!--[if IE 8]><?php echo $this->Html->css('ie-ie8'); ?><![endif]-->
@@ -57,17 +53,6 @@
         echo $this->fetch('css');
         echo $this->fetch('script');
         ?>
-        <script type="text/javascript">
-            $(function(){
-                $('.auto-submit-star').rating({
-                    callback: function(value, link){
-                        this.form.submit();
-                    }
-                });
-                jQuery('#mycarousel').jcarousel();
-            });
-        </script>
-
     </head>
     <!--body class="frontpage" -->
     <body>

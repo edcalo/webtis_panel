@@ -25,5 +25,6 @@ $this->set("page", "faqs");
         echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
         ?>
     </div>
+    <img src="/faqs/qr"/>
 </div>
 

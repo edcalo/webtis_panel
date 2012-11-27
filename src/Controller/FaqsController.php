@@ -1,5 +1,6 @@
 <?php
 
+App::import('Vendor', 'QrCode.phpqrcode' . DS . 'qrlib');
 App::uses('AppController', 'Controller');
 
 /**
@@ -8,6 +9,8 @@ App::uses('AppController', 'Controller');
  * @property Faq $Faq
  */
 class FaqsController extends AppController {
+
+    public $components = array('QrGenerator');
 
     /**
      * index method
@@ -34,11 +37,14 @@ class FaqsController extends AppController {
     public function view($id = null) {
         $this->Faq->id = $id;
         if (!$this->Faq->exists()) {
-            throw new NotFoundException(__('Invalid faq'));
+            $this->set('faq', $this->Faq->read(null, $id));
         }
         $this->set('faq', $this->Faq->read(null, $id));
     }
 
-    
+    public function qr() {
+        $this->layout = null;
+        $this->set("qr", $this->QrGenerator->test());
+    }
 
 }
